@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
+}
+
+:root{
+    --bgColor:#A4B4F9;
+    --buttons:#5C78F5;
+    --secondary:rgb(139, 149, 159);
+}
+
+body{
+    background-color: var(--bgColor);
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+div.wrapper{
+    width: 100vw;
+    height: 100vh;
+}
+
+div.container{
+    background-color: white;
+    width: 90vmin;
+    /* max-width: 70vw; */
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 80px 50px 30px 50px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 30px rgb(115, 115, 115);
+    flex-direction: column;
+}
+div.main{
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 20px; */
+    /* border: 1px solid black; */
+}
+
+.word-input{
+    border: none;
+    border-bottom: 2px solid #5C78F5;
+    padding: 10px 10px;
+    width: 50%;
+    outline: none;
+    font-size: 20px;
+}
+
+.search-button{
+    width: 100px;
+    padding: 10px;
+    color: white;
+    background-color: var(--bgColor);
+    border: none;
+    border-radius: 4px;
+    box-shadow: 1px 1px 2px rgb(115, 115, 115);
+    font-size: 16px;
+    outline: none;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+.search-button:hover{
+    background-color: var(--buttons);
+}
+
+div.result{
+    /* border: 1px solid black; */
+    margin-top: 65px;
+}
+div.word{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.audio{
+    border: none;
+    outline: none;
+    background-color: inherit;
+    color: var(--bgColor);
+    font-size: 20px;
+}
+div.word h2{
+    font-size: 2rem;
+}
+div.details{
+    gap: 5px;
+    margin:5px 0px 20px 0px;
+    color: var(--secondary);
+}
+div.parah{
+    margin: 5px 0px;
+
+}
+.meaning{
+    font-size: 20px;
+}
+
+.example{
+    font-style: italic;
+    color: var(--secondary);
+    border-left: 5px solid var(--buttons);
+    padding-left: 10px;
+    font-size: 18x;
+    margin: 20px 0px;
+}
+
+
+@media screen and (max-width:441px) {
+    .main{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .word-input{
+        width: 100%;
+        /* text-align: center; */
+    }
+}
+
+
+
+
